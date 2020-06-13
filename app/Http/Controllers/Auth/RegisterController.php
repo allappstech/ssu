@@ -8,7 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+use App\Student;
 class RegisterController extends Controller
 {
     /*
@@ -39,6 +41,7 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        $this->middleware('guest:student');
     }
 
     /**
@@ -70,4 +73,39 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+ 
+/**
+ * @return Factory|View
+ */
+public function showStudentRegisterForm()
+{
+    return view('auth.student', ['url' => 'resgister/student']);
+}
+public function showstaff()
+{
+    return view('login.register', ['url' => '/Staff/Register']);
+}
+ 
+/**
+ * @param Request $request
+ *
+ * @return RedirectResponse
+ */
+protected function createStudent(Request $request)
+{
+    $this->validator($request->all())->validate();
+    Student::create([
+        'name' => $request->name,
+        'admissionNo' => $request->admissionNo,
+        'email' => $request->email, 
+        'password' => Hash::make($request->password),
+        'programme_id' => 1,
+        'session' => '2017/2018',
+        'status' => 100,
+       
+    ]);
+    return redirect()->intended('Student/Dashboard');
+}
+
 }

@@ -1,0 +1,229 @@
+.bg1{
+    background-color:rgb(red, green, blue)!important ;
+}
+.bg2{
+    background-color: rgba(red, green, blue, alpha);
+}
+.bg-org{
+    background-color: rgba(173, 106, 74,0.5)!important;
+    
+}
+
+.mytop{
+  padding-bottom: 5px;
+  padding-top: 15px;
+  
+  background-image: url('../imagess/banner.png');
+  background-color: aliceblue;
+  border-bottom: rgba(241, 140, 8, 0.1) solid 1px;
+  
+}
+body{
+  background-image: url('../images/1.jpg');
+}
+h2{
+  font-size: 22px;
+  color:rgb(77, 51, 3);
+ 
+    font-family: "Lucida Console", Courier, monospace;
+   
+}
+.section-bg{
+ background-color: rgba(255, 255, 245,0.8);
+}
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(173, 106, 74,0.5)!important;
+  background-color: rgba(230, 193, 115, 0.9)!important;
+  background-color: rgba(253, 250, 255, 0.9)!important;
+  overflow: auto;
+}
+.carouse{
+  padding-top: 0px;
+  margin-top: 25px;
+  border:0px solid white;
+}
+.linkbox{
+  height: 400px;
+  width: 450px;
+  border:0px solid #564;
+  margin-top: 10px;
+  padding: 5px;
+}
+.collink{
+  margin-bottom: 10px;
+  padding:10px;
+  height: 150px;
+  background-color: rgba(235, 214, 158, 0.2);
+  margin-left: 10px;
+   
+}
+.roundlink{
+  border-radius: 90px;
+  height: 90px;
+  width: 90px;
+  border:1px solid rgba(8, 109, 16,0.3);
+ 
+  line-height: 90px;
+  text-align: center;
+  color:rgb(26, 80, 5);
+   
+}
+.roundlink .fa{ position: relative;
+width: 66px;
+font-size: 54px;
+color: rgb(180, 126, 10);
+color:rgba(236, 155, 33, 0.4);
+text-align: center;
+top:15px;  
+
+}
+.collink:hover {
+ border:0px solid brown;
+ background-color: rgba(197, 235, 207, 0.3);
+}
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+.nav-item .fa{
+    color:green !important;
+}
+
+.nav-item a{
+    color:green !important;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+ .login-m{
+     border:1px solid  rgba(241, 140, 8, 0.1);
+     background-color: rgba(233, 150, 41, 0.2);
+     padding: 10px;;
+ }
+
+ .login-m input[type='text'], .login-m input[type='password'],.login-m input[type='email']{
+    
+    background-color: rgba(241, 140, 8, 0.1)!important;
+    padding: 20px;;
+}
+.imgs{
+    margin:auto;
+    text-align: center;
+}
+
+.hnote{
+  font-size: 28px;
+  color:#fff;
+  font-weight: bold;
+  
+}

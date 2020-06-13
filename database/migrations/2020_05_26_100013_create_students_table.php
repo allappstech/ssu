@@ -17,6 +17,8 @@ class CreateStudentsTable extends Migration
             $table->id();
             $table->string('name',120);
             $table->bigInteger('admissionNo');
+            $table->string('email',40)->unique();
+            $table->string('password',60);
             $table->foreignId('programme_id');
             $table->string('session',20);
             $table->string('status',40);

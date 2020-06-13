@@ -4,45 +4,13 @@
 @section('content')
  
     <div class="row">
-    <div class="col-md-6">
-  
-<div class="carouse">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ asset('images/slider/1.jpg') }}" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('images/slider/2.jpg') }}" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('images/slider/3.jpg') }}" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('images/slider/4.jpg') }}" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>we Make eveting simple</h5>
-    <p>eaer to owur jjcok</p>
-  </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-
-
-
-
-    
-</div>
-        <div class="col-md-6">
+     
+        <div class="col-md-6 offset-md-3">
             <div class="linkbox">
             <div class="row">
 
              <div class="col-md-10 offset-md-2 login-m ">
-             <form method="POST" action="{{ route('loginstudent') }}">
+             <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
